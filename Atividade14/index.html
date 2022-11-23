@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+    <script src="script.js"></script>
+    <style>
+
+        body{
+            background-color: #c2d7ff;
+            color:#151515;
+            font-weight: bold;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Atividade 14</h1>
+
+    <form action="dados" method="post" name="dados" id="dados" onsubmit="return validar()">
+        <div class="form" width=200 heigth=200>
+            <p>Nome Completo:</p>
+            <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <br> 
+            <p>E-Mail : </p>
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <br>
+            <p>Mensagem :</p> 
+            <textarea name="idMensagem" cols="50" rows="8" id="idMensagem" value="" input></textarea>
+            <br>
+            <br>
+            <br>
+
+            <b><p>Pesquisa</p></b>
+            <p>Primeira vez nesta página ?</p>
+
+
+            <div>
+            <input type="radio" id="Sim" name="rb">Sim
+            <input type="radio" id="Nao" name="rb">Não
+            </div>
+            <br>
+            <div>
+            <input name="Submit" type="submit" form="dados" value="Submit">
+            <input name="Reset" type="reset" form="dados" value="Redefinir">
+        </div>
+
+        </div>
+    </form>
+</body>
+</html>
