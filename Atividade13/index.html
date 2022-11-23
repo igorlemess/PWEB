@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade13</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="transforma" method="post" name="transform" id="transform">
+        Insira um texto: <input type="text" name="conteudo" type="text" id="idConteudo" size="52" maxlength="150">
+        <br>
+        <br>
+        <input type="checkbox" name="maiusc" id="maiusc" onclick="transforma()"> Maiúscula
+        <input type="checkbox" name="minusc" id="minusc" onclick="transforma()"> Minúscula
+    </form>
+
+    <p id="texto">
+
+    </p>
+</body>
+</html>
